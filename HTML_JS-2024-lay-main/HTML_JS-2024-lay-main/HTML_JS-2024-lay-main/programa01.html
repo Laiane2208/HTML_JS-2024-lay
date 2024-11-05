@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Média de idade </title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostrar(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+let ano = 2024
+const minhaIdade = ano - 2008
+const maeIdade = ano - 1979
+const paiIdade = ano - 1969
+
+       mostrar(`Oi, meu nome é Laiane e tenho ${minhaIdade}  anos` )
+       mostrar(`Oi, o nome da minha mãe é Zeloir e ela tem ${maeIdade} anos`)
+       mostrar(`Oi, o nome do meu pai é Leo e ele tem ${paiIdade} anos`)
+       pulaLinha()
+
+       let media = (minhaIdade + maeIdade + paiIdade)/3
+       mostrar(` A média das idades da minha família é : ${media}`)
+       pulaLinha()  
+       ano = 2030
+
+mostrar('Em 2030 minha família terá: ')
+mostrar(`Eu terei ${ano - 2008} anos`)
+mostrar(`Minha mãe terá ${ano - 1979} anos`)
+mostrar(`Meu pai terá ${ano - 1969} anos`)
+
+
+    </script>
+    
+</body>
+</html>
